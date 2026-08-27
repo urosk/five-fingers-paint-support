@@ -182,13 +182,25 @@ p { margin-top: 0; }
   font-weight: 800;
   box-shadow: 0 9px 22px rgba(82, 132, 10, 0.2);
 }
-.radius-mark::before {
-  width: 18px;
-  height: 18px;
-  border: 3px solid white;
-  border-radius: 50%;
-  content: "";
+.metal-mark {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #00e8dd, #00f064);
+  box-shadow: 0 9px 22px rgba(0, 202, 140, 0.25);
 }
+.metal-mark::before,
+.metal-mark::after {
+  position: absolute;
+  color: #151c1c;
+  content: "M";
+  font-size: 24px;
+  font-weight: 950;
+  letter-spacing: -8px;
+  transform: skewY(8deg);
+  text-shadow: 1px 1px #4b5655;
+}
+.metal-mark::before { left: 7px; top: 7px; }
+.metal-mark::after { left: 15px; top: 11px; }
 .save-mark::before {
   width: 17px;
   height: 17px;
@@ -270,6 +282,14 @@ p { margin-top: 0; }
 .guided-access p,
 .guided-access li { color: rgba(255, 255, 255, 0.78); }
 .guided-access strong { color: white; }
+.guided-access .parent-setting {
+  margin: 22px 0 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(231, 246, 174, 0.35);
+  border-radius: 14px;
+  color: white;
+  background: rgba(231, 246, 174, 0.12);
+}
 .guided-access a { color: #e7f6ae; }
 .guided-access a:hover { color: white; }
 .guided-access ol { margin: 0; padding-left: 22px; }
