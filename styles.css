@@ -9,7 +9,7 @@
   --accent-dark: #416d00;
   --accent-soft: #b7dd36;
   --glow: #c9eb62;
-  --page: #f8faef;
+  --page: #fff7d6;
   --wood: #e4a92b;
   --red: #e54022;
   --blue: #159fdb;
@@ -28,8 +28,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 82% -8%, rgba(183, 221, 54, 0.3), transparent 34rem),
-    linear-gradient(180deg, #fffef8 0, var(--page) 40rem);
+    radial-gradient(circle at 82% -8%, rgba(255, 207, 64, 0.3), transparent 34rem),
+    linear-gradient(180deg, #fffdf4 0, var(--page) 40rem);
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
   font-size: 17px;
   line-height: 1.62;
