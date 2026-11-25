@@ -88,8 +88,18 @@ nav a[aria-current="page"] {
 }
 
 .hero {
-  max-width: 920px;
+  display: grid;
+  align-items: center;
+  gap: clamp(28px, 4vw, 48px);
   padding: clamp(70px, 10vw, 128px) 0 clamp(68px, 9vw, 112px);
+}
+
+.hero-screenshot {
+  display: block;
+  width: min(100%, 640px);
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 18px 48px rgba(112, 68, 19, 0.18);
 }
 
 .eyebrow {
@@ -377,6 +387,14 @@ footer {
 }
 footer > span:first-child { margin-right: auto; }
 .footer-note { font-size: 13px; }
+
+@media (min-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+  .hero h1 {
+    font-size: clamp(50px, 6.25vw, 76px);
+    text-wrap: balance;
+  }
+}
 
 @media (max-width: 760px) {
   .site-header,
