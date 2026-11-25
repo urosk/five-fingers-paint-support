@@ -127,6 +127,14 @@ p { margin-top: 0; }
   letter-spacing: -0.012em;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.app-store-link img { display: block; width: auto; }
+
 .privacy-pill {
   display: inline-flex;
   align-items: center;
